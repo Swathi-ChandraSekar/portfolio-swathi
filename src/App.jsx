@@ -17,7 +17,7 @@ function App() {
     Download Resume
   </a>
 </section>
-<br></br>
+
 
       <Footer />
     </div>
