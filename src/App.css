@@ -1,69 +1,100 @@
+/* Base layout */
 #root {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background: #0b1f2a;
 }
+
 body {
   margin: 0;
-  background:#eaf6ff;
-  color: #293136;
+  background: #0b1f2a;
+  color: #eaf6ff;
   font-family: "Segoe UI", sans-serif;
 }
+
+/* HERO */
 .hero-section {
-  padding: 80px 0;
+  padding: 100px 0 80px;
+  background: linear-gradient(135deg, #0b1f2a, #0f3d3e);
 }
+
+/* Text */
 .hero-desc {
   max-width: 550px;
   line-height: 1.6;
-  color: #d6f2f2;
+  color: #cfeef2;
 }
+
+/* PROFILE IMAGE */
 .profile-img {
   width: 260px;
   height: 260px;
-  border-radius: 4%;
+  border-radius: 6%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.25);
 }
+
+/* Larger image on laptop */
+@media (min-width: 992px) {
+  .profile-img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .profile-img {
     width: 160px;
     height: 160px;
   }
+
   .hero-section {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
   }
 }
+
+/* Subtle one-time float */
 .floating {
-  animation: float 3s ease-in-out infinite;
+  animation: float 0.8s ease-out forwards;
 }
+
 @keyframes float {
-  0% {
-    transform: translateY(0);}
-  50% {
-    transform: translateY(-6px);}
-  100% {
-    transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* Resume section */
 .resume-section {
-  background: #f4f8fb;
-  padding: 60px 0;
+  background: #0f3d3e;
+  padding: 70px 0;
 }
+
+/* Buttons */
 .btn-dark {
   background: #0b1f2a;
   border: none;
+  color: #eaf6ff;
 }
+
 .btn-dark:hover {
   background-color: #12394a;
 }
+
 .btn-outline-info {
   border-color: #7dd3fc;
   color: #7dd3fc;
 }
+
 .btn-outline-info:hover {
-  background-color: #eaf6ff;
+  background-color: #7dd3fc;
   color: #0b1f2a;
-}
-.app-wrapper {
-  min-height: 100vh;
-  background: #eaf6ff;
 }

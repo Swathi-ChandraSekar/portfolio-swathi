@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="app-wrapper">
       <Navbar />
-      <br></br>
       <Hero />
       <Technologies />
       <Projects /> 
