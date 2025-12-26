@@ -11,6 +11,12 @@ function App() {
       <Hero />
       <Technologies />
       <Projects /> 
+      <section className="resume-section text-center">
+  <a href="/resume.pdf" download className="btn btn-lg btn-dark">
+    Download Resume
+  </a>
+</section>
+
       <Footer />
     </>
   );
