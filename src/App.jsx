@@ -16,18 +16,17 @@ function App() {
       <Sidebar />
       <main className="main-content">
         <Hero />
-        <Technologies />
         <Projects /> 
-        <section className="resume-section text-center">
+        <Technologies />
+        <section className="resume-section text-center right">
   <a href={resume} download className="btn btn-lg btn-dark">
     Download Resume
   </a>
 </section>
-
-
-      <Footer />
       </main>
+       
       </div>
+      <Footer />
     </div>
   );
 }

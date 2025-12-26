@@ -12,14 +12,14 @@ function Technologies() {
   ];
 
   return (
-    <section className="technologies bg-light py-5 ">
-      <div className="container text-center ">
+    <section className="py-5 right">
+      <div className="container">
         <h2 className="mb-4">Technologies Known</h2>
 
-        <div className="row justify-content-center g-3">
+        <div className="row justify-content-center g-3 ">
           {skills.map((skill, index) => (
             <div key={index} className="col-6 col-md-3">
-              <div className="border rounded py-3 shadow-sm bg-white">
+              <div className="border rounded py-2 shadow-sm bg-white skilllist text-center">
                 {skill}
               </div>
             </div>

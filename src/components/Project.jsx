@@ -1,7 +1,7 @@
 function Projects() {
   return (
-    <section id="projects" className="container py-5">
-      <h2 className="text-center mb-4">Projects</h2>
+    <section id="projects" className="container py-5 right">
+      <h2 className=" mb-4">Projects</h2>
 
       <div className="row g-4">
 
@@ -15,7 +15,7 @@ function Projects() {
               <a
                 href="https://github.com/USERNAME/canteen-app"
                 target="_blank"
-                className="btn btn-outline-dark btn-sm"
+                className="btn btn-outline-primary btn-sm"
               >
                 Source Code
               </a>

@@ -1,30 +1,13 @@
-/* Base layout */
 #root {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 100vw;
   min-height: 100vh;
-  background: #f5f5f5;
 }
-.hero-section {
-  padding: 100px 0 80px;
-  background: linear-gradient(135deg, #0b1f2a, #0f3d3e);
-}
-.hero-desc {
-  max-width: 550px;
-  line-height: 1.6;
-  color: #cfeef2;
-}
-  .hero-section {
-    text-align: center;
-    padding: 70px 20px;
-  }
-
 .floating {
   animation: float 0.8s ease-out forwards;
 }
-
 @keyframes float {
   from {
     opacity: 0;
@@ -35,90 +18,68 @@
     transform: translateY(0);
   }
 }
-
-/* Resume section */
 .resume-section {
-  background: #f5f5f5;
-  padding: 70px 0;
+  padding: 20px 0;
 }
-
-/* Buttons */
-.btn-dark {
-  background: #0b1f2a;
-  border: none;
-  color: #eaf6ff;
-}
-
 .btn-dark:hover {
-  background-color: #12394a;
+  background-color: #38bdf8;
 }
-
 .btn-outline-info {
-  border-color: #7dd3fc;
+  border-color: #c2d3db;
   color: #7dd3fc;
 }
-
 .btn-outline-info:hover {
-  background-color: #7dd3fc;
-  color: #0b1f2a;
+  background-color: #38bdf8;
+  color: #e5e7eb;
 }
 .technologies{
   background-color: #f5f5f5;
 }
-/* LAYOUT */
 .layout {
   display: flex;
   min-height: 100vh;
-  background: #eaf6ff;
+  background: #0f172a;
 }
-
-/* SIDEBAR */
 .sidebar {
   width: 390px;
   background: #f5fbff;
   padding: 30px 20px;
   position: sticky;
-  top: 60px;
+  top: 80px;
   height: fit-content;
-  border-right: 1px solid #dbeafe;
+  border:none;
   text-align: center;
+  margin: 20px;
+  border-radius: 2%;
 }
-
 .sidebar-img {
   width: 270px;
   height: 270px;
-  border-radius: 6%;
+  border-radius: 2%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.25);
 }
-
 .sidebar-links {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-/* MAIN CONTENT */
 .main-content {
   flex: 1;
   padding: 0 20px;
 }
-
-/* MOBILE BEHAVIOR */
 @media (max-width: 992px) {
   .layout {
+    margin-top: 40px;
     flex-direction: column;
   }
-
   .sidebar {
     position: relative;
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid #dbeafe;
     top: 0;
   }
-
   .sidebar-img {
     width: 120px;
     height: 120px;
@@ -127,12 +88,21 @@
 .sidebar-link {
   text-decoration: none;
   font-size: 15px;
-  color: #0b1f2a;
+  color: #0f172a;
   font-weight: 500;
   transition: color 0.2s ease;
 }
-
 .sidebar-link:hover {
-  color: #2563eb;
+  color: #38bdf8;
   text-decoration: underline;
+}
+.right {
+   background-color: #0f172a;
+    color: #e5e7eb;
+}
+.skilllist{
+    color: #0f172a;
+}
+.hig {
+    color: #38bdf8;
 }

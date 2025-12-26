@@ -33,7 +33,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+                href="https://www.linkedin.com/in/swathi-chandra-sekar-472487378/"
                 target="_blank"
               >
                 <i className="bi bi-linkedin me-1"></i>

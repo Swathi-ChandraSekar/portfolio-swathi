@@ -10,36 +10,35 @@ function Sidebar() {
 
       <div className="sidebar-links">
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/swathi-chandra-sekar-472487378/"
           target="_blank"
           rel="noreferrer"
           className="sidebar-link"
         >
-          🔗 LinkedIn
+          🔗 Swathi Chandra Sekar | LinkedIn
         </a>
-
+        
         <a
-          href="https://github.com/"
+          href="https://github.com/Swathi-ChandraSekar"
           target="_blank"
           rel="noreferrer"
           className="sidebar-link"
         >
-          💻 GitHub
+          💻Github: Swathi-ChandraSekar (Swathi)
         </a>
 
         <a
-          href="mailto:yourmail@example.com"
+          href="mailto:swathichandrasekar226@gmail.com"
           className="sidebar-link"
         >
-          ✉️ Email
+          ✉️ swathichandrasekar226@gmail.com
         </a>
 
-        <a
-          href={resume}
-          download
-         className="resume-section text-center btn btn-dark btn-sm mt-2 ">
-          Download Resume
-        </a>
+  
+         <a href={resume} download className="resume-section text-center btn btn-sm btn-dark">
+           Download Resume
+         </a>
+       
       </div>
     </aside>
   );

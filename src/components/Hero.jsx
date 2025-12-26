@@ -2,7 +2,7 @@ import profileImg from "../assets/profile.jpeg";
 
 function Hero() {
   return (
-    <section className="container-fluid py-5">
+    <section className="container-fluid py-5 right">
       <div className="container">
         <div className="row align-items-center">
 
@@ -12,7 +12,7 @@ function Hero() {
             <br></br>
             <h1 className="fw-bold">Hi, I’m Swathi</h1>
 
-            <p className="fs-5 text-muted">
+            <p className="fs-5 hig">
               React & Full Stack Developer
             </p>
 
@@ -25,12 +25,21 @@ function Hero() {
               
 
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/swathi-chandra-sekar-472487378/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline-primary"
               >
                 LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/Swathi-ChandraSekar"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline-light"
+              >
+                Github
               </a>
             </div>
           </div>
