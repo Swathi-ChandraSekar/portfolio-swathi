@@ -1,20 +1,57 @@
-function Navbar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-      <a className="navbar-brand" href="#">My Portfolio</a>
+import { useState } from "react";
 
-      <div className="ms-auto">
-        <a className="nav-link d-inline text-white" href="#projects">Projects</a>
-        <a className="nav-link d-inline text-white" href="/resume.pdf" download>
-          Resume
+function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+      <div className="container">
+        <a className="navbar-brand fw-bold" href="#">
+          Swathi
         </a>
-        <a
-          className="nav-link d-inline text-white"
-          href="https://github.com/USERNAME"
-          target="_blank"
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={() => setOpen(!open)}
         >
-          GitHub
-        </a>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className={`collapse navbar-collapse ${open ? "show" : ""}`}>
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#technologies">Skills</a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+                target="_blank"
+              >
+                <i className="bi bi-linkedin me-1"></i>
+                LinkedIn
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                className="btn btn-outline-light btn-sm ms-lg-2"
+                href="/resume.pdf"
+                download
+              >
+                Resume
+              </a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </nav>
   );
