@@ -12,8 +12,8 @@ function Technologies() {
   ];
 
   return (
-    <section id="technologies" className="bg-light py-5 technologies">
-      <div className="container text-center technologies">
+    <section className="technologies bg-light py-5 ">
+      <div className="container text-center ">
         <h2 className="mb-4">Technologies Known</h2>
 
         <div className="row justify-content-center g-3">

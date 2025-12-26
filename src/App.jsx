@@ -4,15 +4,21 @@ import Technologies from './components/Technologies';
 import Projects from './components/Project';
 import Footer from './components/Footer';
 import './App.css';
-import resume from './assets/resume.pdf';  
+import resume from './assets/resume.pdf'; 
+import Sidebar from './components/Sidebar';
+
+
 function App() {
   return (
     <div className="app-wrapper">
       <Navbar />
-      <Hero />
-      <Technologies />
-      <Projects /> 
-      <section className="resume-section text-center">
+    <div className="layout">
+      <Sidebar />
+      <main className="main-content">
+        <Hero />
+        <Technologies />
+        <Projects /> 
+        <section className="resume-section text-center">
   <a href={resume} download className="btn btn-lg btn-dark">
     Download Resume
   </a>
@@ -20,6 +26,8 @@ function App() {
 
 
       <Footer />
+      </main>
+      </div>
     </div>
   );
 }
