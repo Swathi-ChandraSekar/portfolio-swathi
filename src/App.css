@@ -106,6 +106,24 @@ body {
   border-color: #7dd3fc;
   color: #7dd3fc;
 }
+.profile-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
 
 .btn-outline-info:hover {
   background: #7dd3fc;

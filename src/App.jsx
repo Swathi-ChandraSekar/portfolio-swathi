@@ -3,7 +3,8 @@ import Hero from './components/Hero';
 import Technologies from './components/Technologies';   
 import Projects from './components/Project';
 import Footer from './components/Footer';
-
+import './App.css';
+import resume from './assets/resume.pdf';  
 function App() {
   return (
     <div className="app-wrapper">
@@ -12,10 +13,11 @@ function App() {
       <Technologies />
       <Projects /> 
       <section className="resume-section text-center">
-  <a href="/resume.pdf" download className="btn btn-lg btn-dark">
+  <a href={resume} download className="btn btn-lg btn-dark">
     Download Resume
   </a>
 </section>
+<br></br>
 
       <Footer />
     </div>
