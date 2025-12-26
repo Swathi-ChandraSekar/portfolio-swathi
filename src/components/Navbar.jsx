@@ -1,3 +1,4 @@
+import  resume  from "../assets/resume.pdf";
 import { useState } from "react";
 
 function Navbar() {
@@ -43,7 +44,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="btn btn-outline-light btn-sm ms-lg-2"
-                href="/resume.pdf"
+                href={resume}
                 download
               >
                 Resume
