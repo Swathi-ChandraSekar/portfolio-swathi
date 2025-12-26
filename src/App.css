@@ -1,31 +1,21 @@
-
 #root {
   display: flex;
   flex-direction: column;
 }
-
-
 body {
   margin: 0;
   background:#eaf6ff;
   color: #293136;
   font-family: "Segoe UI", sans-serif;
 }
-
 .hero-section {
   padding: 80px 0;
 }
-
 .hero-desc {
   max-width: 550px;
   line-height: 1.6;
   color: #d6f2f2;
 }
-
-/* =====================
-   PROFILE IMAGE
-===================== */
-
 .profile-img {
   width: 260px;
   height: 260px;
@@ -33,79 +23,47 @@ body {
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.25);
 }
-
-
 @media (max-width: 768px) {
   .profile-img {
     width: 160px;
     height: 160px;
   }
-
   .hero-section {
     text-align: center;
     padding: 60px 20px;
   }
 }
-
-/* floating animation */
 .floating {
   animation: float 3s ease-in-out infinite;
 }
-
 @keyframes float {
   0% {
-    transform: translateY(0);
-  }
+    transform: translateY(0);}
   50% {
-    transform: translateY(-6px);
-  }
+    transform: translateY(-6px);}
   100% {
-    transform: translateY(0);
-  }
+    transform: translateY(0);}
 }
-
 .resume-section {
   background: #f4f8fb;
   padding: 60px 0;
 }
-
 .btn-dark {
   background-color: #0b1f2a;
   border: none;
 }
-
 .btn-dark:hover {
   background-color: #12394a;
 }
-
 .btn-outline-info {
   border-color: #7dd3fc;
   color: #7dd3fc;
 }
-.profile-img {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ddd;
-}
-
-.floating {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
-}
-
-
 .btn-outline-info:hover {
-  background: #7dd3fc;
+  background-color: #eaf6ff;
   color: #0b1f2a;
 }
 .app-wrapper {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0b1f2a, #0f3d3e);
+  background: #eaf6ff;
 }
