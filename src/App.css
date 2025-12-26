@@ -1,6 +1,19 @@
 /* =====================
    GLOBAL THEME
 ===================== */
+/* Force dark background everywhere */
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: #0b1f2a;
+  margin: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 
 body {
   margin: 0;
@@ -97,4 +110,8 @@ body {
 .btn-outline-info:hover {
   background: #7dd3fc;
   color: #0b1f2a;
+}
+.app-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b1f2a, #0f3d3e);
 }
