@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"homepage": "https://Swathi-ChandraSekar.github.io/portfolio-swathi",
+"homepage": "https://github.com/Swathi-ChandraSekar/portfolio-swathi.git",
+
 
   "scripts": {
     "dev": "vite",
