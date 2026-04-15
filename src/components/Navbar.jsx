@@ -1,4 +1,3 @@
-import  resume  from "../assets/resume.pdf";
 import { useState } from "react";
 
 function Navbar() {

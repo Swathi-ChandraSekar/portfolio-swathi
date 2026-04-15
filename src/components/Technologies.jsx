@@ -4,19 +4,22 @@ function Technologies() {
     "CSS",
     "JavaScript",
     "React",
+    "Next.js",
+    "Flutter",
     "Bootstrap",
-    "Node.js",
+    "FastAPI",
+    "MongoDB",
     "MySQL",
     "Git",
-    "GitHub",
+    "GitHub"
   ];
 
   return (
-    <section className="py-5 right">
+    <section id="technologies" className="py-5 right">
       <div className="container">
-        <h2 className="mb-4">Technologies Known</h2>
+        <h2 className="mb-4">Skills</h2>
 
-        <div className="row justify-content-center g-3 ">
+        <div className="row justify-content-center g-3">
           {skills.map((skill, index) => (
             <div key={index} className="col-6 col-md-3">
               <div className="border rounded py-2 shadow-sm bg-white skilllist text-center">

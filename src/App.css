@@ -107,3 +107,96 @@
 .hig {
     color: #38bdf8;
 }
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 60px;
+}
+
+/* Glass Card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1, h2, h5 {
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 30px;
+}
+
+/* Skill chips */
+.skilllist {
+  border-radius: 30px;
+  padding: 10px;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.skilllist:hover {
+  background: #3b82f6;
+  color: white;
+}
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  background: #3b82f6;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  width: auto !important;
+}

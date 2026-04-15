@@ -1,4 +1,3 @@
-import profileImg from "../assets/profile.jpeg";
 
 function Hero() {
   return (
@@ -10,16 +9,17 @@ function Hero() {
           {/* RIGHT: CONTENT */}
           <div className="col-lg-7">
             <br></br>
-            <h1 className="fw-bold">Hi, I’m Swathi</h1>
+            <h1 className="fw-bold">
+  Hi, I’m <span style={{ color: "#3b82f6" }}>Swathi</span>
+</h1>
 
-            <p className="fs-5 hig">
-              React & Full Stack Developer
-            </p>
+<p className="fs-5">
+  Frontend Developer | React • Flutter • Next.js
+</p>
 
-            <p>
-              I build clean, responsive web applications using modern
-              technologies with a strong focus on usability and performance.
-            </p>
+<p>
+  I design and build modern, scalable, and user-friendly web and mobile applications.
+</p>
 
             <div className="d-flex gap-3 flex-wrap mt-3">
               

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import './App.css';
 import resume from './assets/resume.pdf'; 
 import Sidebar from './components/Sidebar';
+import Experience from "./components/experience";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <main className="main-content">
         <Hero />
         <Projects /> 
+        <Experience />
         <Technologies />
         <section className="resume-section text-center right">
   <a href={resume} download className="btn btn-lg btn-dark">
